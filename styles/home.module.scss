@@ -1,0 +1,60 @@
+.pane{
+  width: 80%;
+  margin: 0 auto;
+ 
+}
+
+
+@media (min-width:600px){
+    .pane{
+        width:100%;
+        padding: 1rem;
+      margin: 4rem auto 0;
+      display:flex;
+      gap: 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+       aside{
+           
+           width:calc(50% - 1rem);
+           
+       }
+       
+    }
+    
+}
+
+@media (min-width:800px){
+    .pane{
+ 
+        padding: 2rem;
+      margin: 4rem auto 0;
+      display:flex;
+      gap: 2rem;
+     
+      flex-wrap: wrap;
+       aside{
+       
+           width:calc(33% - 2rem);
+           max-width: 300px;
+       }
+       
+    }
+    
+}
+
+@media (min-width:1000px){
+    .pane{
+      justify-content: center;
+      gap:3rem;
+     
+      flex-wrap: wrap;
+       aside{
+ 
+           width:calc(33% - 2rem);
+           max-width: 420px;
+       }
+       
+    }
+    
+}
