@@ -43,7 +43,7 @@ export default function Home(props) {
 
 export async function getStaticProps(){
   
-    const res = await fetch('https://shoeshine8k-default-rtdb.firebaseio.com/products.json')
+    const res = await fetch('https://storefront-14ded-default-rtdb.firebaseio.com/products.json')
     const productData = await res.json();
     const products = Object.values(productData)
  return {
