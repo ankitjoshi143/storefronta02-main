@@ -26,11 +26,11 @@ export default function Home(props) {
           <>
           <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <meta name="description" content="storefront online running shoes with free shipping"/>
-          <meta name="keywords" content="Shoes, Runing, Running Shoes, Nike Shoes, New Balance Shoes"/>
+          <meta name="description" content="storefront car rentals"/>
+          <meta name="keywords" content="Car, Rental, luxury cars, vehicle, rentals"/>
            <title>Storefront</title>
           </Head>
-           <PageTitle tagline="product specials" title="Storefront"/>
+           <PageTitle tagline="Rental specials" title="Car Rentals"/>
            <main className={pane}>
                {  products.map(product=> <ProductCard  key={product.uid} product={product}/>)}
            </main>

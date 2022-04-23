@@ -1,9 +1,9 @@
-import { getProduct } from "./../../libs/getProduct";
+import { getProducts } from "./../../libs/getProduct";
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
-  const product = await getProduct(req.body.uid);
+  const product = await getProducts(req.body.uid);
   if(product){
     if (req.method === 'POST') {
         /* 
