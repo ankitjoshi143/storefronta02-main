@@ -9,13 +9,13 @@ const myLoader = ({ src, width, quality }) => {
 
 
 function ProductCard ({children, product, ...props})  {
-  const {productName, productPrice, productDescription, imageUrl, uid}= {...product}
+  const {productName, productPrice, productDescription, imageURL, uid}= {...product}
   return (
        <aside className={productCard}>
          <header>
            <Image
               loader={myLoader}
-              src={imageUrl}
+              src={imageURL}
               alt={productName}
               width={418}
               height={240}
